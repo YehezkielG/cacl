@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <div class="container">
+        <h1 style="color: white; text-align: center; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; letter-spacing: 2px;">
+            Calculator
+        </h1>
+        
+            <div class="top">
+            <input type="text" id="view" readonly><br>
+            <input type="text" class="textarea" readonly>
+        </div>
+        <div id="btnField">
+            <button class="btn" onclick="sqrtA()">
+                Sqrt
+            </button>
+            <button class="btn" onclick="clearE()">CE</button>
+            <button class="btn" onclick="clearAll()">C</button>
+            <button class="btn"  style="background: rgb(145, 82, 82);" onclick="backSpace()">
+                <span class="material-symbols-outlined">
+                    backspace
+                </span>
+            </button>
+
+            <button class="btn" onclick="insert('7')">7</button>
+            <button class="btn" onclick="insert('8')">8</button>
+            <button class="btn" onclick="insert('9')">9</button>
+            <button class="btn" onclick="operation('/')">
+                <img src="image/icons8-divide-100.png" alt="" srcset="" width="20">
+            </button>
+
+            <button class="btn" onclick="insert('4')">4</button>
+            <button class="btn" onclick="insert('5')">5</button>
+            <button class="btn" onclick="insert('6')">6</button>
+            <button class="btn" onclick="operation('-')">-</button>
+
+            <button class="btn" onclick="insert('1')">1</button>
+            <button class="btn" onclick="insert('2')">2</button>
+            <button class="btn" onclick="insert('3')">3</button>
+            <button class="btn" onclick="operation('+')">+</button>
+
+            <button class="btn" onclick="insert('.')">.</button>
+            <button class="btn" onclick="insert('0')">0</button>
+            <button class="btn" onclick="operation('*')">x</button>
+            <button class="btn" onclick="sum()" style="background: rgb(30, 118, 140);">=</button>
+        </div>
+        </div>
+        <!-- <div class="container">
+            <h2 style="color: white;">
+                History :
+            </h2>
+            <div>
+                <textarea id="history">
+                </textarea>
+            </div>
+            <div>
+                <button id="Ch" >Clear History</button>
+                <button class="" id="hide">Hide</button>
+            </div>
+        </div> -->
+    <script src="Javascript/script.js"></script>
+</body>
+</html>
